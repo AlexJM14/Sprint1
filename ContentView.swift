@@ -20,15 +20,16 @@ struct ContentView: View {
     
     var body : some View{
         Text("Sprint 1").padding(50)
-
         HStack{
             VStack{
-                Text(texto1).padding()
-                Image("kfs").resizable().aspectRatio(contentMode:.fit).frame(width: 200, height:100)
-            }
-            VStack{
-                Text(texto2).padding()
-                Image("kfs").resizable().aspectRatio(contentMode:.fit).frame(width: 200, height:100)
+                HStack{
+                    Text(texto1).frame(width: 150,height: 100)
+                    Text(texto2).frame(width: 150,height: 100)
+                }
+                HStack{
+                    Image("gato").resizable().aspectRatio(contentMode:.fit).frame(width: 150, height:100)
+                    Image("perro").resizable().frame(width: 150, height:100)
+                }
             }
         }
         VStack{
